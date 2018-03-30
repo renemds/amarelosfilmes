@@ -11,14 +11,58 @@
     <title>Amarelos Filmes</title>
   </head>
   <body>
-    <h1>Em breve novo site da Amarelos Filmes!</h1>
 
-    <button type="button" class="btn btn-primary">Primary</button>
+  <div class="header"> 
+    <nav class="navbar navbar-expand-lg navbar-fixed-top text-white">
+      <div class="container">
+          <a class="navbar-brand h1 mb-0" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quem Somos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Serviços</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Portfólio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Orçamento</a>
+              </li>  
+            </ul>
+          </div>
+      </div><!-- /.container -->    
+    </nav>
+  </div><!-- /.header -->
+
+  <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+  <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+  <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+  </video>
+  <div id="polina">
+  <h1>Polina</h1>
+  <p>filmed by Alexander Wagner 2011
+  <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac.</p>
+  <button>Pause</button>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
