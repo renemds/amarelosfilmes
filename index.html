@@ -8,9 +8,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
 
+    <script>
+    var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+    </script>
+
     <title>Amarelos Filmes</title>
   </head>
   <body>
+
+    <!-- /.Começo do Menu -->
 
   <div class="header"> 
     <nav class="navbar navbar-expand-lg navbar-fixed-top text-white">
@@ -46,18 +83,40 @@
     </nav>
   </div><!-- /.header -->
 
-  <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
-    <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-  <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
-  <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
-  </video>
-  <div id="polina">
-  <h1>Polina</h1>
-  <p>filmed by Alexander Wagner 2011
-  <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac.</p>
-  <button>Pause</button>
-  </div>
+  <!-- /.Final do Menu -->
+
+  
+  <section class="video-header container-video">
+    <div class="fullscreen-video-wrap">
+      <video src="http://thenewcode.com/assets/videos/polina.mp4" autoplay="true" loop="true"></video>
+    </div>
+    <div class="video-overlay"></div>
+    <div class="video-content">
+      <h1>Aqui nascem ideias!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quis magni iusto a quos corrupti rerum perferendis eius commodi quae, et ut placeat porro ipsum nesciunt laboriosam at distinctio ducimus.</p>
+      <a href="#" class="btn">Saiba Mais</a>
+    </div>
+  </section>
+
+
+  <section class="quem-somos">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Quem Somos</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus voluptates, placeat voluptatum porro exercitationem a nesciunt animi totam similique, sapiente expedita veritatis vel dolorem enim iste. Temporibus sed optio repellendus.</p>
+          <div class="btn">Saiba Mais</div>
+        </div>
+        <div class="col">
+          2 of 2
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
