@@ -26,14 +26,14 @@
     <nav class="navbar navbar-expand-lg fixed-top text-white">
       <div class="container">
           <a class="navbar-brand h1 mb-0" href="#"><img src="img/logo-amarelos-filmes.svg" alt="Logo Amarelos Filmes"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
           </button>
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Quem Somos</a>
@@ -268,47 +268,52 @@
   <!-- /Início dos Depoimentos-->
   <section class="depoimentos d-none d-none d-sm-block">
     <div class="container">
-  
-        <h1>Depoimentos</h1>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione recusandae sit praesentium dolor, esse repudiandae voluptatem culpa eius vero eaque quam aliquam, ipsam autem qui. Modi dolor quos rem labore.</p>
-            <p class="name-client">Nome do Cliente</p>
-            <p class="company-client">Empresa</p>
-            </div>
-            <div class="carousel-item">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione recusandae sit praesentium dolor, esse repudiandae voluptatem culpa eius vero eaque quam aliquam, ipsam autem qui. Modi dolor quos rem labore.</p>
-                <p class="name-client">Nome do Cliente</p>
-                <p class="company-client">Empresa</p>            
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+      <div class="row">
+        <div class="col-4 dp-left">
+          <h1>Depoimentos de Clientes</h1>
+          <p>Depoimentos de clientes e parceiros que escolheram os melhores serviços de audiovisual para suas empresas e eventos.</p>
         </div>
+        <div class="col-sm">
 
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item box-depoimento col-sm-8 active">
+                    <div class="ft-cliente">
+                      <img src="img/portfolio-01.jpg" alt="First slide">
+                    </div>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem quidem."</p>
+                    <p><span class="name-client">Renê Mendes</span><span class="company-client"> (Web developer Freelancer)</span></p>
+                  </div>
+                  <div class="carousel-item box-depoimento col-sm-8">
+                      <div class="ft-cliente">
+                          <img src="img/portfolio-01.jpg" alt="First slide">
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem quidem."</p>
+                        <p><span class="name-client">Renê Mendes</span><span class="company-client"> (Web developer Freelancer)</span></p>
+                  </div>
+                  <div class="carousel-item box-depoimento col-sm-8">
+                      <div class="ft-cliente">
+                          <img src="img/portfolio-01.jpg" alt="First slide">
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem quidem."</p>
+                        <p><span class="name-client">Renê Mendes</span><span class="company-client"> (Web developer Freelancer)</span></p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            
+        </div>
+      </div>
     </div>
   </section>
   <!-- /Final dos Depoimentos-->
-
-  <!-- /Início dos Cliente-->
-  <section class="clientes d-none d-none d-sm-block">
-    <div class="container">
-      <h1>Clientes</h1>
-    </div>
-  </section>
-  <!-- /Final dos Cliente-->
 
   <!-- /Início do Orçamento-->
   <section class="orcamento d-none d-none d-sm-block">
@@ -381,25 +386,6 @@
   </section>
   <!-- /Final do Orçamento Responsive-->
 
-  <!-- /Inicio das Redes Sociais
-  <aside class="social">
-    <div class="container">
-        <h1>Redes Sociais</h1>
-      <div class="row">
-        <div class="col-sm">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Famarelosfilmes%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        </div>
-        <div class="col-sm">
-          
-        </div>
-        <div class="col-sm">
-          Direita
-        </div>
-      </div>
-    </div>
-  </aside>
--->
-
   <!-- /Inicio do Footer-->
   <footer>
     <div class="container">
@@ -411,15 +397,17 @@
             <a href="#"><span class="icons-social fa fa-youtube-play"></span></a>
             <a href="#"><span class="icons-social fa fa-whatsapp"></span></a>
         </div>
-        <div class="col-sm logo-footer">   
+        <div class="col-sm logo-footer d-none d-none d-sm-block">   
             <img src="img/logo-amarelos-filmes.svg" alt="Logo Amarelos Filmes">       
         </div>
-        <div class="col-sm">
+        <div class="col-sm whatsapp">
+            <a href="#" class="btn-main"><span class="icons-social-watss fa fa-whatsapp"></span> Atendimento via WhatsApp</a>
         </div>
       </div>
       <div class="row copyright">
       <div class="col-sm">
-        <p>Amarelos Filmes - Copyright 2018 - Todos os direitos reservados <span>RM</span></p>
+        <p>Amarelos Filmes - Copyright 2018 - Todos os direitos reservados <span class="d-none d-none d-sm-block">RM</span></p>
+        <p><span class="d-block d-sm-none">RM</span></p>
       </div>
     </div>
     </div>
